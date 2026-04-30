@@ -49,11 +49,10 @@ public:
 
     // Виведення всіх книг бібліотеки
     void showAllBooks() const {
-        cout << "\n--- Бібліотека: " << name << " ---" << endl;
+        cout << "\nБібліотека: " << name << "" << endl;
         for (const auto& book : books) {
             book.printInfo();
         }
-        cout << "--------------------------------\n" << endl;
     }
 };
 
@@ -70,7 +69,7 @@ int main() {
     cout << "Початкові дані:" << endl;
     book1.printInfo();
 
-    cout << "\nЗмінюємо рік видання для першої книги..." << endl;
+    cout << "\nЗмінення року видання для першої книги" << endl;
     book1.setYear(1950);
     book1.printInfo();
 
